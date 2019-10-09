@@ -1,0 +1,13 @@
+
+.record-container{
+    border-width: 2px;
+    border-color: black;
+    width: 50%;
+    max-width: 50%;
+    position: relative;
+    left: 20%;
+    right: 20%;
+    word-wrap: break-word;
+    overflow: scroll;
+
+}
