@@ -16,14 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework import routers
-
-
-router = routers.SimpleRouter()
+from core.views import *
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'/', include(router.urls)),
-   
+    path(r'/api/reset_db', clear_records),
+    path(r'/api/get_records', get_records),
+    path(r'', main),
 ]
