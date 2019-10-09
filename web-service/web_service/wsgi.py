@@ -1,5 +1,5 @@
 """
-WSGI config for judyst_web_service project.
+
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
