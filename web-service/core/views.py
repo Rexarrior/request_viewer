@@ -3,10 +3,8 @@ from rest_framework.authentication import get_authorization_header
 from rest_framework.response import Response
 from django.http import FileResponse, HttpResponseNotFound
 from core.models import *
-from core.serializers import UserSerializer, special_links_serializer
 from core.utils.decorators import redirect_if_authorize
 from core.utils.exceptions import ErrorResponse
-from core.utils.functions import get_token, is_not_valid_text_fields, \
     send_email, get_user_or_none, create_user_from_fields, check_email, \
     is_not_fields_include, check_password, get_links
 from web_service.settings import BASE_DIR
