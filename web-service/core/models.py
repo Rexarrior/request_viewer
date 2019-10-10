@@ -5,7 +5,7 @@ from django.db import models
 
 # Magic numbers take from magic specifications.
 class Record(models.Model):
-    pk = models.AutoField(primary_key=True)
+    primary_key = models.AutoField(primary_key=True)
     headers = models.TextField()
     body = models.TextField()
     date = models.DateField(auto_now=True)

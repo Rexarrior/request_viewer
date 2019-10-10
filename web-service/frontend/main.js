@@ -89,8 +89,15 @@ function SendRequest(r_method, r_path, r_args, r_handler)
 function LoadRecords()
 {
     SendRequest("GET", "/api/get_records", [], function(request){
-        var container = Document.getElementById("record_place");
-        container.innerText = request.body; 
+        var container = document.getElementById("record_place");
+        let records =  request.responce.body;
+	records = JSON.parse(records) 
+	let txt = "";
+	for (var i =0; i < records.len; i++)
+	{
+		txt += "<p id=\"record_place\">" + records[i] + "</p>\n\n\n";
+	}
+	container.innerHtml = txt;
     });
 }
 
@@ -98,7 +105,7 @@ function LoadRecords()
 
 function ClearView()
 {
-    var container = Document.getElementById("record_place");
+    var container = document.getElementById("record_place");
     container.innerText = "";
 }
 

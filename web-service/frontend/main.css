@@ -1,4 +1,6 @@
-
+body{
+top:330%;
+}
 .record-container{
     border-width: 2px;
     border-color: black;
