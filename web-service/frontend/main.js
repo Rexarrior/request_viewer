@@ -90,15 +90,16 @@ function LoadRecords()
 {
     SendRequest("GET", "/api/get_records", [], function(request){
         var container = document.getElementById("record_place");
-        let records =  request.responce.body;
-	records = JSON.parse(records) 
-	let txt = "";
-	for (var i =0; i < records.len; i++)
-	{
-		txt += "<p id=\"record_place\">" + records[i] + "</p>\n\n\n";
-	}
-	container.innerHtml = txt;
-    });
+        console.log(request);
+        let records =  request.responce;
+        records = JSON.parse(records) 
+        let txt = "";
+        for (var i =0; i < records.len; i++)
+        {
+            txt += "<p id=\"record_place\">" + records[i] + "</p>\n\n\n";
+        }
+        container.innerHtml = txt;
+        });
 }
 
 
