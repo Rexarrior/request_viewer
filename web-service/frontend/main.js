@@ -91,7 +91,7 @@ function LoadRecords()
     SendRequest("GET", "/api/get_records", [], function(request){
         var container = document.getElementById("record_place");
         console.log(request);
-        let records =  request.responce;
+        let records =  request.response;
         records = JSON.parse(records) 
         let txt = "";
         for (var i =0; i < records.len; i++)
