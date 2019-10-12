@@ -6,14 +6,15 @@ top:330%;
     border-width: 2px;
     border-color: black;
     width: 50%;
-    max-width: 50%;
+    max-width: 70%;
     position: relative;
     left: 10%;
     right: 10%;
     margin-top: 5%;
     word-wrap: break-word;
     overflow: scroll;
-    max-height: 60%;
+    margin-bottom: 20%;
+    max-width: 60%;
 }
 
 
