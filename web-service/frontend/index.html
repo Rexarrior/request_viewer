@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <title>Request viewer </title>
   <link rel="stylesheet" href="main.css">
+  <link href="themes/prism.css" rel="stylesheet" />     
   <script src="main.js"></script>
   <!--[if IE]>
    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,8 +15,8 @@
   </style>
  </head>
  <body>
-    <div class="record-container">
-            <p id="record_place"></p>
+    <script src="prism.js"></script>
+    <div class="record-container" id="record_place">
     </div>
     <div class="button-container">
         <button id="UpdateButton" onclick="LoadRecords()" class="control-button">Обновить</button>
