@@ -88,8 +88,8 @@ function SendRequest(r_method, r_path, r_args, r_handler)
 
 var RECORD_HTML = [
     "<div class=\"panel panel-default\">\n<div class=\"panel-heading\">\n  <h3 class=\"panel-title\">\n",
-    "</h3>\n</div>\<div class=\"panel-body\">\n<div class=\"record_place\"><code class=\"language-json\">\n",
-    "</code></div>\n</div>\n</div>"
+    "</h3>\n</div>\<div class=\"panel-body\">\n<div class=\"record_place\"><pre class=\"language-javascript\"><code class=\"language-javascript\">\n",
+    "</code></pre></div>\n</div>\n</div>"
 ]
 
 
