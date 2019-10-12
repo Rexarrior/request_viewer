@@ -9,7 +9,25 @@ top:330%;
     position: relative;
     left: 20%;
     right: 20%;
+    margin-top: 5%;
     word-wrap: break-word;
     overflow: scroll;
 
+}
+
+
+
+.button-container{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    position: relative;
+    
+}
+
+.control-button{
+    width: 25%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
