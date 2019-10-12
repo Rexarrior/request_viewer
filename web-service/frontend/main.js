@@ -86,17 +86,30 @@ function SendRequest(r_method, r_path, r_args, r_handler)
 
 
 
+var RECORD_HTML = [
+    "<div class=\"panel panel-default\">\n<div class=\"panel-heading\">\n  <h3 class=\"panel-title\">\n",
+    "</h3>\n</div>\<div class=\"panel-body\">\n<div class=\"record_place\"><code class=\"language-json\">\n",
+    "</code></div>\n</div>\n</div>"
+]
+
+
+
 function LoadRecords()
 {
     SendRequest("GET", "/api/get_records", [], function(request){
         var container = document.getElementById("record_place");
         console.log(request);
         let records =  request.response;
-        records = JSON.parse(records) 
+        records = JSON.parse(records) ;
         let txt = "";
         for (var i =0; i < records.length; i++)
         {
-            txt += "<div class=\"record_place\"><code class=\"language-json\">" + JSON.stringify(records[i]) + "</code></div>\n\n\n";
+            
+            txt += RECORD_HTML[0];
+            txt += i;
+            txt += RECORD_HTML[1];
+            txt += JSON.stringify(records[i].fields);
+            txt += RECORD_HTML[2];
         }
         container.innerHTML = txt;
         });

@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <title>Request viewer </title>
   <link rel="stylesheet" href="main.css">
-  <link href="prism.css" rel="stylesheet" />     
+  <link href="prism.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     
   <script src="main.js"></script>
   <!--[if IE]>
    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,9 +20,15 @@
     <div class="record-container" id="record_place">
     </div>
     <div class="button-container">
-        <button id="UpdateButton" onclick="LoadRecords()" class="control-button">Обновить</button>
-        <button id="ClearButton" onclick="ClearView()" class="control-button">Очистить</button>
-        <button id="ClearDatabaseButton" onclick="ClearDB()" class="control-button">Удалить все записи из базы</button>
+        <button type="button" class="btn btn-primary"  id="UpdateButton" onclick="LoadRecords()" class="control-button">Обновить</button>
+        <button type="button" class="btn btn-primary"  id="ClearButton" onclick="ClearView()" class="control-button">Очистить</button>
+        <button type="button" class="btn btn-primary"  id="ClearDatabaseButton" onclick="ClearDB()" class="control-button">Удалить все записи из базы</button>
     </div>
- </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" ></script>
+  
+</body>
+</html>
+ </body>        
 </html>
