@@ -96,9 +96,9 @@ function LoadRecords()
         let txt = "";
         for (var i =0; i < records.length; i++)
         {
-            txt += "<p id=\"record_place\">" + records[i] + "</p>\n\n\n";
+            txt += "<p id=\"record_place\">" + JSON.stringify(records[i]) + "</p>\n\n\n";
         }
-        container.innerHtml = txt;
+        container.innerHTML = txt;
         });
 }
 
