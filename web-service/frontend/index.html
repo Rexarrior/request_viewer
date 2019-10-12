@@ -17,14 +17,15 @@
  </head>
  <body>
     <script src="prism.js"></script>
-    <div class="record-container" id="record_place">
+    <div class="jumbotron">
+        <div class="record-container" id="record_place">
+        </div>
+        <div class="button-container">
+            <button type="button" class="btn btn-primary"  id="UpdateButton" onclick="LoadRecords()" class="control-button">Обновить</button>
+            <button type="button" class="btn btn-primary"  id="ClearButton" onclick="ClearView()" class="control-button">Очистить</button>
+            <button type="button" class="btn btn-primary"  id="ClearDatabaseButton" onclick="ClearDB()" class="control-button">Удалить все записи из базы</button>
+        </div>
     </div>
-    <div class="button-container">
-        <button type="button" class="btn btn-primary"  id="UpdateButton" onclick="LoadRecords()" class="control-button">Обновить</button>
-        <button type="button" class="btn btn-primary"  id="ClearButton" onclick="ClearView()" class="control-button">Очистить</button>
-        <button type="button" class="btn btn-primary"  id="ClearDatabaseButton" onclick="ClearDB()" class="control-button">Удалить все записи из базы</button>
-    </div>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" ></script>
   
