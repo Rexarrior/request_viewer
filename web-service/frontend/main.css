@@ -1,18 +1,19 @@
 body{
 top:330%;
 }
+
 .record-container{
     border-width: 2px;
     border-color: black;
     width: 50%;
     max-width: 50%;
     position: relative;
-    left: 20%;
-    right: 20%;
+    left: 10%;
+    right: 10%;
     margin-top: 5%;
     word-wrap: break-word;
     overflow: scroll;
-
+    max-height: 60%;
 }
 
 
