@@ -94,7 +94,7 @@ function LoadRecords()
         let records =  request.response;
         records = JSON.parse(records) 
         let txt = "";
-        for (var i =0; i < records.len; i++)
+        for (var i =0; i < records.length; i++)
         {
             txt += "<p id=\"record_place\">" + records[i] + "</p>\n\n\n";
         }
